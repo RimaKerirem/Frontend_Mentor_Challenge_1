@@ -1,7 +1,9 @@
-# Mon_CV
+# Frontend_Mentor_Project_1
 
-### Languages : HTML, CSS and Javascript
+### Built with
 
-### Frameworks : Google Fonts
+	#### Languages : HTML, CSS and Javascript
+	
+	#### Frameworks : Google Fonts
 
 ### Visit Site : https://rimakerirem.github.io/Frontend_Mentor_Project_1/

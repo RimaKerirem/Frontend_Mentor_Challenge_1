@@ -19,7 +19,6 @@ body {
   font-family: "Epilogue", sans-serif;
   font-family: "Inter", sans-serif;
   font-family: "Lora", serif;
-  font-family: "Noto Serif Display", serif;
   background-color: var(--almost-white);
 }
 
@@ -31,7 +30,7 @@ header {
 }
 
 header .logo {
-  width: 70px;
+  width: 65px;
   margin-top: 6px;
 }
 
@@ -43,9 +42,9 @@ header .close-menu {
 header nav {
   flex: 1;
   display: flex;
-  margin-left: 70px;
+  margin-left: 60px;
 }
-@media (min-width: 375px) {
+@media (min-width: 575px) {
   header nav {
     justify-content: space-between;
   }
@@ -55,6 +54,7 @@ header nav .nav-left,
 header nav .nav-right {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
 header nav .nav-left li {
@@ -118,8 +118,8 @@ header nav .nav-right li a {
 }
 
 header nav .nav-right li .register {
-  padding: 8px 20px;
-  margin-left: 30px;
+  padding: 6px 20px;
+  margin-left: 20px;
   border: 1px solid var(--medium-gray);
   border-radius: var(--border-radius);
 }
@@ -132,34 +132,28 @@ header nav .nav-right li .register:hover {
   border: 1px solid var(--almost-black);
 }
 
-.landing {
-  height: calc(100vh - 70px);
-}
-
 .landing .container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin: 20px auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .landing .container .box-left {
-  flex-basis: 50%;
+  flex-basis: 30%;
 }
 
 .landing .container .box-left h1 {
-  font-size: 70px;
+  font-size: 60px;
   color: var(--almost-black);
   line-height: 0.8;
-  margin: 140px 151px 0 0;
+  margin: 120px 0 40px;
 }
 
 .landing .container .box-left p {
   color: var(--medium-gray);
   font-size: var(--font-size-parag);
-  margin: 40px 160px 40px 0;
   font-weight: 500;
 }
 
@@ -174,7 +168,7 @@ header nav .nav-right li .register:hover {
   font-weight: 500;
   display: block;
   width: fit-content;
-  margin-bottom: 70px;
+  margin: 40px 0 70px;
 }
 
 .landing .container .box-left a:hover {
@@ -191,30 +185,15 @@ header nav .nav-right li .register:hover {
   margin-right: 25px;
 }
 
-.landing .container .box-right {
-  width: 370px;
+.landing .container img.desktop {
+  width: 400px;
 }
 
-.landing .container .box-right img {
-  width: 100%;
-}
-
-.landing .container .box-right img.mobile {
+.landing .container img.mobile {
   display: none;
 }
 
-@media (max-width: 1100px) {
-  .landing .container .box-left h1 {
-    font-size: 60px;
-    margin-right: 10px;
-  }
-
-  .landing .container .box-left p {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   header .logo {
     margin-top: 0;
   }
@@ -287,20 +266,20 @@ header nav .nav-right li .register:hover {
 
   .landing .container {
     flex-direction: column-reverse;
-    padding-top: 0;
-    gap: 40px;
+    margin: 0;
   }
 
-  .landing .container .box-right img.desktop {
+  .landing .container img.desktop {
     display: none;
   }
 
-  .landing .container .box-right img.mobile {
+  .landing .container img.mobile {
     display: block;
+    width: 100%;
   }
 
   .landing .container .box-left {
-    margin-top: 0;
+    margin-top: 25px;
     text-align: center;
   }
 
