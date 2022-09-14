@@ -30,7 +30,7 @@ header {
 }
 
 header .logo {
-  width: 65px;
+  width: 60px;
   margin-top: 6px;
 }
 
@@ -118,7 +118,7 @@ header nav .nav-right li a {
 }
 
 header nav .nav-right li .register {
-  padding: 6px 20px;
+  padding: 8px 20px;
   margin-left: 20px;
   border: 1px solid var(--medium-gray);
   border-radius: var(--border-radius);
