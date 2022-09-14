@@ -1,4 +1,4 @@
-# Frontend_Mentor_Project_1
+# Frontend_Mentor_Challenge_1
 
 ### Built with
 
