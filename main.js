@@ -16,20 +16,15 @@ menu.onclick = () => (nav.style.right = "0");
 
 closeMenu.onclick = () => (nav.style.right = "-150%");
 
-features.onclick = () => {
-  featuresUl.classList.toggle("active");
-  if (featuresUl.classList.contains("active")) {
-    featuresUpDown.setAttribute("src", "images/icon-arrow-up.svg");
-  } else {
-    featuresUpDown.setAttribute("src", "images/icon-arrow-down.svg");
-  }
-};
+features.onclick = () => setImage(featuresUl, featuresUpDown);
 
-company.onclick = () => {
-  companyUl.classList.toggle("active");
-  if (companyUl.classList.contains("active")) {
-    companyUpDown.setAttribute("src", "images/icon-arrow-up.svg");
+company.onclick = () => setImage(companyUl, companyUpDown);
+
+function setImage(elt, img) {
+  elt.classList.toggle("active");
+  if (elt.classList.contains("active")) {
+    img.setAttribute("src", "images/icon-arrow-up.svg");
   } else {
-    companyUpDown.setAttribute("src", "images/icon-arrow-down.svg");
+    img.setAttribute("src", "images/icon-arrow-down.svg");
   }
-};
+}
